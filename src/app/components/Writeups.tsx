@@ -20,7 +20,7 @@ const writeupsData: Writeup[] = [
     date: "July 2025",
     platform: "HackTheBox",
     tags: ["Web Exploitation", "Privilege Escalation", "File Misconfigurations", "Red Team"],
-    link: "#" // Replace with real link later
+    link: "/writeups" 
   },
   {
     title: "7th Place in UW-Stout's Cyber CTF 2025",
@@ -28,7 +28,7 @@ const writeupsData: Writeup[] = [
     date: "Dec 2025",
     platform: "Competition",
     tags: ["CTF", "Reverse Engineering", "OSINT", "Cryptography"],
-    link: "#"
+    link: "/writeups"
   },
   {
     title: "CyberdDefenders: Oski Lab Writeup",
@@ -36,7 +36,7 @@ const writeupsData: Writeup[] = [
     date: "Dec 2025",
     platform: "CyberDefenders",
     tags: ["Malware Analysis", "Threat Intel", "Blue Team"],
-    link: "#"
+    link: "/writeups"
   }
 ];
 
