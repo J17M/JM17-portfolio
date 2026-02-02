@@ -2,7 +2,8 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Education from './components/Education';
-import { Certifications, Writeups, Contact } from './components/Sections';
+import { Certifications, Contact } from './components/Sections';
+import Writeups from './components/Writeups'; // Import the new component
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <About />
         <Education />
         <Certifications />
-        <Writeups />
+        <Writeups /> 
         <Contact />
       </main>
     </>
