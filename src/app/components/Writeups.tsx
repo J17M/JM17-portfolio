@@ -43,7 +43,7 @@ const writeupsData: Writeup[] = [
 export default function Writeups() {
   const sectionRef = useRef<HTMLElement>(null);
 
-  // Scroll Animation (Same as your other components)
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
