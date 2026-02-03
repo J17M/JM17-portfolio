@@ -72,8 +72,7 @@ export default function Writeups() {
             <a 
               key={index} 
               href={post.link} 
-              target="_blank" 
-              rel="noopener noreferrer" 
+
               className="writeup-card"
             >
               <div className="writeup-header">
