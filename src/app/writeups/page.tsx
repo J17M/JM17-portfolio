@@ -41,12 +41,20 @@ export default function BlogHome() {
   const [activeTag, setActiveTag] = useState('All'); 
   const [showFilterMenu, setShowFilterMenu] = useState(false); 
 
+
+  const sortedArticles = useMemo(() => {
+    return [...articles].sort((a, b) => {
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
+  }, []);
+
   const allTags = useMemo(() => {
     const tags = new Set(articles.flatMap(article => article.tags));
     return ['All', ...Array.from(tags)];
   }, []);
 
-  const filteredArticles = articles.filter(article => {
+
+  const filteredArticles = sortedArticles.filter(article => {
     const matchesSearch = 
       article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       article.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
@@ -151,8 +159,8 @@ export default function BlogHome() {
                 </div>
 
                 <div className="article-thumbnail">
-  <img src={article.image} alt={article.title} />
-</div>
+                   <img src={article.image} alt={article.title} />
+                </div>
 
               </Link>
             ))
