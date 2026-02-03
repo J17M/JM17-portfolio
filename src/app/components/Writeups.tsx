@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-
+import Link from 'next/link'; 
 
 interface Writeup {
   title: string;
@@ -12,11 +12,10 @@ interface Writeup {
   link: string;
 }
 
-
 const writeupsData: Writeup[] = [
   {
     title: "HackTheBox: Nibbles Walkthrough",
-    description: "Easy rated Linux box showcasing basic enumeration tactics, web application exploitation, and identifiying file misconfigurations to escalate user privileges",
+    description: "Easy rated Linux box showcasing basic enumeration tactics, web application exploitation, and identifying file misconfigurations to escalate user privileges",
     date: "July 2025",
     platform: "HackTheBox",
     tags: ["Web Exploitation", "Privilege Escalation", "File Misconfigurations", "Red Team"],
@@ -31,7 +30,7 @@ const writeupsData: Writeup[] = [
     link: "/writeups"
   },
   {
-    title: "CyberdDefenders: Oski Lab Writeup",
+    title: "CyberDefenders: Oski Lab Writeup",
     description: "Analyzed an MD5 hash of a malicious file using sandbox reports. Extracted vital information and mapped identified behaviors to MITRE ATT&CK techniques.",
     date: "Dec 2025",
     platform: "CyberDefenders",
@@ -42,7 +41,6 @@ const writeupsData: Writeup[] = [
 
 export default function Writeups() {
   const sectionRef = useRef<HTMLElement>(null);
-
   
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -69,10 +67,10 @@ export default function Writeups() {
         
         <div className="writeups-grid">
           {writeupsData.map((post, index) => (
-            <a 
+         
+            <Link 
               key={index} 
               href={post.link} 
-
               className="writeup-card"
             >
               <div className="writeup-header">
@@ -92,7 +90,9 @@ export default function Writeups() {
               <div className="read-more">
                 Read Article <span>→</span>
               </div>
-            </a>
+            
+        
+            </Link>
           ))}
         </div>
       </div>
