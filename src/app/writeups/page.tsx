@@ -151,8 +151,8 @@ export default function BlogHome() {
                 </div>
 
                 <div className="article-thumbnail">
-                  <div className="img-placeholder"></div> 
-                </div>
+  <img src={article.image} alt={article.title} />
+</div>
 
               </Link>
             ))

@@ -1197,15 +1197,19 @@ p:last-of-type {
     width: 180px;
     height: 120px;
     flex-shrink: 0;
-    border-radius: 8px;
+    background: transparent;
     overflow: hidden;
-    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .article-thumbnail img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    border-radius: 8px;
+    border: none;
 }
 
 .no-results {
