@@ -4,7 +4,7 @@ import About from './components/About';
 import Education from './components/Education';
 import Qualifications from './components/Qualifications'; 
 import Writeups from './components/Writeups'; 
-import { Contact } from './components/Sections'; 
+import Contact from './components/Contact'; 
 
 export default function Home() {
   return (

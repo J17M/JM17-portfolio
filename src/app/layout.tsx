@@ -11,7 +11,13 @@ export const metadata: Metadata = {
   title: 'Juan Monarrez-Gonzalez | Cybersecurity Portfolio',
   description: 'Cybersecurity portfolio showcasing penetration testing skills, SOC analysis experience, and security research.',
   keywords: ['cybersecurity', 'penetration testing', 'security researcher', 'SOC analyst', 'CTF'],
+  icons: {
+    icon: '/assets/cyber-icon.png', 
+  },
+
 };
+
+
 
 export default function RootLayout({
   children,
