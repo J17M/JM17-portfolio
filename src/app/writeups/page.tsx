@@ -17,7 +17,7 @@ const articles = [
   {
     id: 2,
     title: "Deconstructing Oski Stealer: A Malware Analysis",
-    excerpt: "Reverse engineering the Oski info-stealer. I break down the unpacking process, identify the C2 communication channels, and map the behavior to MITRE ATT&CK.",
+    excerpt: "Reverse engineering the Oski info-stealer. (more to be added).",
     date: "Dec 05, 2025",
     readTime: "12 min read",
     tags: ["Malware Analysis", "Reverse Engineering", "Blue Team"],
@@ -27,7 +27,7 @@ const articles = [
   {
     id: 3,
     title: "CTF Post-Mortem: UW-Stout 2025",
-    excerpt: "We placed 7th! Here is a breakdown of the Cryptography challenges that stumped us, and the Python scripts we wrote to solve the OSINT category.",
+    excerpt: "7th place ....",
     date: "Dec 20, 2025",
     readTime: "5 min read",
     tags: ["CTF", "Cryptography", "Python"],
@@ -72,10 +72,10 @@ export default function BlogHome() {
           <Link href="/" className="back-link">← Return to Portfolio</Link>
           
           <div className="profile-section">
-            <img src="/assets/profile.jpg" alt="Profile" className="blog-profile-pic" />
-            <h1 className="blog-name">Juan Monarrez</h1>
+            <img src="/assets/cyber-icon.png" alt="Profile" className="blog-profile-pic" />
+            <h1 className="blog-name">phishforvulns</h1>
             <p className="blog-bio">
-              Cybersecurity Student & CTF Player. Documenting my journey from "Script Kiddie" to Red Teamer.
+              Aspiring Red Teamer & CTF Player. Documenting my journey and sharing my knowledge along the way.
             </p>
           </div>
 
