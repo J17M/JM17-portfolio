@@ -61,7 +61,7 @@ export default function Contact() {
               </svg>
             </div>
             <h3>GitHub</h3>
-            <span>View my code Repositories</span>
+            <span>View my Repositories</span>
           </a>
 
         </div>

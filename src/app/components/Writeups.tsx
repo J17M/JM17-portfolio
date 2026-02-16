@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react'; 
 import Link from 'next/link'; 
 
 interface Writeup {
@@ -51,7 +51,7 @@ export default function Writeups() {
           }
         });
       },
-      { root: null, rootMargin: '-30% 0px -30% 0px', threshold: 0 }
+      { root: null, rootMargin: '-10% 0px -10% 0px', threshold: 0 }
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);
@@ -63,16 +63,17 @@ export default function Writeups() {
   return (
     <section id="writeups" className="content" ref={sectionRef}>
       <div className="writeups-container">
-        <h2>Writeups</h2>
+        
+        <div className="section-header">
+          <h2>Writeups</h2>
+          <Link href="/writeups" className="view-all-link">
+            View All <span>→</span>
+          </Link>
+        </div>
         
         <div className="writeups-grid">
           {writeupsData.map((post, index) => (
-         
-            <Link 
-              key={index} 
-              href={post.link} 
-              className="writeup-card"
-            >
+            <Link key={index} href={post.link} className="writeup-card">
               <div className="writeup-header">
                 <span className="writeup-platform">{post.platform}</span>
                 <span className="writeup-date">{post.date}</span>
@@ -90,11 +91,10 @@ export default function Writeups() {
               <div className="read-more">
                 Read Article <span>→</span>
               </div>
-            
-        
             </Link>
           ))}
         </div>
+
       </div>
     </section>
   );

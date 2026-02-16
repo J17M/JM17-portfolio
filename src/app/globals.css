@@ -1339,3 +1339,40 @@ p:last-of-type {
     color: var(--accent);
 }
 
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333; 
+    padding-bottom: 10px;
+}
+
+
+.view-all-link {
+    font-size: 14px;
+    color: #888;
+    text-decoration: none;
+    font-family: 'Courier New', monospace;
+    transition: color 0.2s ease;
+}
+
+.view-all-link span {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+
+.view-all-link:hover {
+    color: var(--accent); 
+}
+
+.view-all-link:hover span {
+    transform: translateX(4px); 
+}
+
+
+.section-header h2 {
+    margin-bottom: 0;
+}
