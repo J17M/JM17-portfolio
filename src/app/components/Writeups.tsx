@@ -31,7 +31,7 @@ const writeupsData: Writeup[] = [
   },
   {
     title: "CyberDefenders: Oski Lab Writeup",
-    description: "Analyzed an MD5 hash of a malicious file using sandbox reports. Extracted vital information and mapped identified behaviors to MITRE ATT&CK techniques. (WILL BE ADDED SOON)",
+    description: "Analyzed an MD5 hash of a malicious file using sandbox reports. Extracted vital information and mapped identified behaviors to MITRE ATT&CK techniques.",
     date: "Dec 2025",
     platform: "CyberDefenders",
     tags: ["Malware Analysis", "Threat Intel", "Blue Team"],
