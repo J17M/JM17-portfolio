@@ -2,36 +2,17 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import { WRITEUPS } from '@/data/writeups';
 
-const articles = [
-  {
-    id: 1,
-    title: "HackTheBox: Nibbles Walkthrough",
-    excerpt: "Easy rated Linux box showcasing basic enumeration tactics, web application exploitation, and identifying file misconfigurations to escalate user privileges",
-    date: "July 16, 2025",
-    tags: ["Walkthrough", "Web Exploitation", "Red Team"],
-    image: "/assets/nibbles.png",
-    slug: "/writeups/htb-nibbles"
-  },
-  {
-    id: 2,
-    title: "Oski Lab",
-    excerpt: "Sandbox report analysis of a malicious file. Extracting details and observing MITRE ATT&CKs",
-    date: "Dec 05, 2025",
-    tags: ["Malware Analysis", "Reverse Engineering", "Blue Team"],
-    image: "/assets/oski.webp",
-    slug: "/writeups/oski"
-  },
-  {
-    id: 3,
-    title: "UW-Stout 2025 ",
-    excerpt: "7th place .... (TO BE ADDED SOON)",
-    date: "Dec 20, 2025",
-    tags: ["CTF", "Cryptography", "Python"],
-    image: "/assets/ctf-thumb.jpg",
-    slug: "/writeups/uw-stout-2025"
-  }
-];
+const articles = WRITEUPS.map((w) => ({
+  id: w.slug,
+  title: w.title,
+  excerpt: w.description,
+  date: w.date,
+  tags: w.tags,
+  image: w.image,
+  slug: `/writeups/${w.slug}`,
+}));
 
 export default function BlogHome() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -79,7 +60,7 @@ export default function BlogHome() {
           <div className="blog-socials">
             <a href="https://github.com/J17M" target="_blank">GitHub</a>
             <a href="https://linkedin.com/in/juanm17" target="_blank">LinkedIn</a>
-            <a href="mailto:your.email@wisc.edu">Email</a>
+            <a href="mailto:juan17monarrezg@gmail.com">Email</a>
           </div>
         </div>
       </aside>
@@ -140,7 +121,6 @@ export default function BlogHome() {
                 
                 <div className="article-content">
                   <div className="article-meta">
-                    {/* UPDATED META SECTION: Just the date */}
                     <span className="date">{article.date}</span>
                   </div>
                   

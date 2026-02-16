@@ -1256,6 +1256,16 @@ p:last-of-type {
     max-width: 800px;
 }
 
+.markdown-article .coming-soon {
+    padding: 2rem 0;
+}
+.markdown-article .coming-soon h1 {
+    margin-bottom: 1rem;
+}
+.markdown-article .coming-soon p {
+    color: var(--text-muted);
+}
+
 
 .markdown-article h1 { 
     font-size: 36px; 
