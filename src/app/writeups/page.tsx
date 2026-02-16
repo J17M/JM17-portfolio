@@ -9,27 +9,24 @@ const articles = [
     title: "HackTheBox: Nibbles Walkthrough",
     excerpt: "Easy rated Linux box showcasing basic enumeration tactics, web application exploitation, and identifying file misconfigurations to escalate user privileges",
     date: "July 16, 2025",
-    readTime: "8 min read",
     tags: ["Walkthrough", "Web Exploitation", "Red Team"],
     image: "/assets/nibbles.png",
     slug: "/writeups/htb-nibbles"
   },
   {
     id: 2,
-    title: "Deconstructing Oski Stealer: A Malware Analysis",
-    excerpt: "Reverse engineering the Oski info-stealer. (more to be added).",
+    title: "Oski Lab",
+    excerpt: "Reverse engineering the Oski info-stealer. (TO BE ADDED SOON).",
     date: "Dec 05, 2025",
-    readTime: "12 min read",
     tags: ["Malware Analysis", "Reverse Engineering", "Blue Team"],
     image: "/assets/oski-thumb.jpg",
     slug: "/writeups/oski-analysis"
   },
   {
     id: 3,
-    title: "CTF Post-Mortem: UW-Stout 2025",
-    excerpt: "7th place ....",
+    title: "UW-Stout 2025 ",
+    excerpt: "7th place .... (TO BE ADDED SOON)",
     date: "Dec 20, 2025",
-    readTime: "5 min read",
     tags: ["CTF", "Cryptography", "Python"],
     image: "/assets/ctf-thumb.jpg",
     slug: "/writeups/uw-stout-2025"
