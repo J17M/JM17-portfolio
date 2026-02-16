@@ -35,7 +35,7 @@ const writeupsData: Writeup[] = [
     date: "Dec 2025",
     platform: "CyberDefenders",
     tags: ["Malware Analysis", "Threat Intel", "Blue Team"],
-    link: "/writeups/oski-analysis"
+    link: "/writeups/oski"
   }
 ];
 

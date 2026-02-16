@@ -16,11 +16,11 @@ const articles = [
   {
     id: 2,
     title: "Oski Lab",
-    excerpt: "Reverse engineering the Oski info-stealer. (TO BE ADDED SOON).",
+    excerpt: "Sandbox report analysis of a malicious file. Extracting details and observing MITRE ATT&CKs",
     date: "Dec 05, 2025",
     tags: ["Malware Analysis", "Reverse Engineering", "Blue Team"],
-    image: "/assets/oski-thumb.jpg",
-    slug: "/writeups/oski-analysis"
+    image: "/assets/oski.webp",
+    slug: "/writeups/oski"
   },
   {
     id: 3,
@@ -140,9 +140,8 @@ export default function BlogHome() {
                 
                 <div className="article-content">
                   <div className="article-meta">
+                    {/* UPDATED META SECTION: Just the date */}
                     <span className="date">{article.date}</span>
-                    <span className="dot">•</span>
-                    <span className="read-time">{article.readTime}</span>
                   </div>
                   
                   <h2 className="article-title">{article.title}</h2>
