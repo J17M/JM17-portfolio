@@ -84,8 +84,8 @@ const trainingData: Training[] = [
   },
   {
     platform: "National Cyber League",
-    role: "Gold Bracket (Spring 2025)",
-    description: "Placed 4th out of 691+ competitors (experienced students bracket). Strengths in Cryptography, Forensics, & OSINT.",
+    role: "Diamond 2 Achievement",
+    description: "Placed 47th out of 691+ competitors (experienced students bracket). Strengths in Cryptography, Forensics, & OSINT.",
     link: "https://cyberskyline.com/report/6AENQTRP3KFT",
     image: "/assets/ncl.png"
   }
