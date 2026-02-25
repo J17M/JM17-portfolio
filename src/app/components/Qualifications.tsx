@@ -25,7 +25,15 @@ interface Training {
 
 
 const certsData: Certification[] = [
-  // --- COMPLETED ---
+  {
+    name: "CompTIA CySA+",
+    issuer: "CompTIA",
+    date: "Issued 2025",
+    image: "/assets/cysa.png",
+    link: "https://www.credly.com/badges/87663d4d-a313-4ece-bd2f-b389a98b2325/public_url",
+    skills: ["Threat Hunting", "Log Analysis", "Incident Response"],
+    status: 'completed'
+  },
   {
     name: "CompTIA Security+",
     issuer: "CompTIA",
@@ -46,24 +54,14 @@ const certsData: Certification[] = [
     skills: ["Linux Fundamentals", "Python Scripting", "Exploitation"],
     status: 'completed'
   },
-  
-  // --- IN PROGRESS ---
-  {
-    name: "CompTIA CySA+",
-    issuer: "CompTIA",
-    date: "Est. Completion: April 2026",
-    image: "/assets/cysa.png", 
-    skills: ["Threat Hunting", "Log Analysis", "Incident Response"],
-    status: 'in-progress'
-  },
   {
     name: "Cisco CCNA",
     issuer: "Cisco",
     date: "Est. Completion: June 2026",
-    image: "/assets/ccna.png", 
+    image: "/assets/ccna.png",
     skills: ["IP Routing", "Network Fundamentals", "Network Access"],
-    status: 'in-progress',     
-    imageBg: '#ffffff'         
+    status: 'in-progress',
+    imageBg: '#ffffff'
   }
 ];
 
