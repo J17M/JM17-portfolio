@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import rehypeHighlight from 'rehype-highlight';
 import Link from 'next/link';
 import { WRITEUPS, getWriteupBySlug } from '@/data/writeups';
+import ScrollToTop from '@/app/components/ScrollToTop';
 import 'highlight.js/styles/github-dark.css';
 
 const CONTENT_DIR = path.join(process.cwd(), 'src/content');
@@ -47,6 +48,7 @@ export default async function WriteupPage({
 
   return (
     <div className="blog-layout">
+      <ScrollToTop />
       <main className="blog-feed">
         <Link href="/writeups" className="back-link">
           ← Back to Feed

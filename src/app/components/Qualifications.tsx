@@ -28,7 +28,7 @@ const certsData: Certification[] = [
   {
     name: "CompTIA CySA+",
     issuer: "CompTIA",
-    date: "Issued 2025",
+    date: "Issued February 2025",
     image: "/assets/cysa.png",
     link: "https://www.credly.com/badges/87663d4d-a313-4ece-bd2f-b389a98b2325/public_url",
     skills: ["Threat Hunting", "Log Analysis", "Incident Response"],
