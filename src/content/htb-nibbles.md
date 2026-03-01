@@ -1,4 +1,4 @@
-# Nibbles [Easy]
+# HackTheBox: Nibbles Walkthrough
 
 ![image.png](/assets/nibbles/image.png)
 

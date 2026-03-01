@@ -1,4 +1,4 @@
-# Oski Lab
+# CyberDefenders: Oski Lab Writeup
 
 # Scenario
 

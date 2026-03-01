@@ -25,11 +25,12 @@ export const WRITEUPS: Writeup[] = [
   {
     slug: 'uw-stout-2025',
     title: "7th Place in UW-Stout's Cyber CTF 2025",
-    description: "Breakdown of UW-Stout's CTF challenges and key takeaways that came from such challenges (WILL BE ADDED SOON)",
+    description: "Breakdown of UW-Stout's CTF challenges and key takeaways that came from such challenges.",
     date: "Dec 20, 2025",
     platform: "Competition",
     tags: ["CTF", "Reverse Engineering", "OSINT", "Cryptography", "Python"],
-    image: "/assets/ctf-thumb.jpg",
+    image: "/assets/writeups/uw-stout-2025/JM17.png",
+    contentFile: "uw-stout-2025.md",
   },
   {
     slug: 'oski',
