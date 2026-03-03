@@ -13,6 +13,16 @@ export interface Writeup {
 
 export const WRITEUPS: Writeup[] = [
   {
+    slug: 'htb-meow',
+    title: "HackTheBox: Meow Walkthrough",
+    description: "Easy rated Linux machine. Covers VPN setup, nmap, and Telnet. Root access via default blank password on Telnet. Basic linux commands to view flag.txt file.",
+    date: "July 11, 2025",
+    platform: "HackTheBox",
+    tags: ["Red Team", "Walkthrough"],
+    image: "/assets/writeups/htb-meow/image.png",
+    contentFile: "htb-meow.md",
+  },
+  {
     slug: 'htb-nibbles',
     title: "HackTheBox: Nibbles Walkthrough",
     description: "Easy rated Linux box showcasing basic enumeration tactics, web application exploitation, and identifying file misconfigurations to escalate user privileges",
