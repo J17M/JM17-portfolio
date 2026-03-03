@@ -1253,6 +1253,7 @@ p:last-of-type {
     background: rgba(255, 255, 255, 0.02);
     border-left: 3px solid transparent;
     transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    overflow: hidden;
 }
 
 .article-card:last-child {
@@ -1272,6 +1273,13 @@ p:last-of-type {
 
 .article-content {
     flex: 1;
+    min-width: 0;
+}
+
+.article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .article-meta {
@@ -1300,11 +1308,6 @@ p:last-of-type {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-}
-
-.article-tags {
-    display: flex;
-    gap: 10px;
 }
 
 .mini-tag {
