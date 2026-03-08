@@ -102,7 +102,7 @@ export default function BlogHome() {
         <div className="writeups-list">
           {filteredArticles.length > 0 ? (
             filteredArticles.map((article) => (
-              <Link href={article.slug} key={article.id} className="article-card">
+              <Link href={article.slug} key={article.id} className="article-card" data-slug={article.slug}>
                 <div className="article-content">
                   <div className="article-card-meta">
                     <span className="article-platform">{article.platform}</span>

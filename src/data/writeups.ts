@@ -52,6 +52,16 @@ export const WRITEUPS: Writeup[] = [
     image: "/assets/oski.webp",
     contentFile: "oski-analysis.md",
   },
+  {
+    slug: 'phishnet',
+    title: "HackTheBox: PhishNet Sherlock Writeup",
+    description: "Email header and attachment analysis of a phishing email. Analyzed email headers and malicious attachments. Associated technique to its respective MITRE ATT&CK technique.",
+    date: "March 4, 2026",
+    platform: "HackTheBox",
+    tags: ["Blue Team", "Walkthrough"],
+    image: "/assets/writeups/phishnet/image.png",
+    contentFile: "phishnet.md",
+  },
 ];
 
 export function getWriteupBySlug(slug: string): Writeup | undefined {
