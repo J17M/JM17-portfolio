@@ -29,6 +29,7 @@ const certsData: Certification[] = [
     name: "CompTIA CySA+",
     issuer: "CompTIA",
     date: "Issued February 2025",
+    expiration: "Expires February 2029",
     image: "/assets/cysa.png",
     link: "https://www.credly.com/badges/87663d4d-a313-4ece-bd2f-b389a98b2325/public_url",
     skills: ["Threat Hunting", "Log Analysis", "Incident Response"],
@@ -38,7 +39,7 @@ const certsData: Certification[] = [
     name: "CompTIA Security+",
     issuer: "CompTIA",
     date: "Issued June 2024",
-    expiration: "Expires June 2027",
+    expiration: "Expires February 2029",
     image: "/assets/sec.png",
     link: "https://www.credly.com/badges/470366cf-cfb3-40b1-945c-992030059b9c/",
     skills: ["Threat Detection", "Network Security", "Disaster Recovery"],
@@ -55,13 +56,12 @@ const certsData: Certification[] = [
     status: 'completed'
   },
   {
-    name: "Cisco CCNA",
-    issuer: "Cisco",
-    date: "Est. Completion: June 2026",
-    image: "/assets/ccna.png",
-    skills: ["IP Routing", "Network Fundamentals", "Network Access"],
+    name: "OSCP+",
+    issuer: "OffSec",
+    date: "Est. completion: August 2026",
+    image: "/assets/oscp.webp",
+    skills: ["Penetration Testing", "Privilege Escalation", "Active Directory", "Report Writing"],
     status: 'in-progress',
-    imageBg: '#ffffff'
   }
 ];
 

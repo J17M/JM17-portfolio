@@ -62,6 +62,17 @@ export const WRITEUPS: Writeup[] = [
     image: "/assets/writeups/phishnet/image.png",
     contentFile: "phishnet.md",
   },
+  {
+    slug: 'letsdefend-bash-script',
+    title: "LetsDefend: Bash Script Challenge",
+    description:
+      "Walkthrough of a suspicious YARN script: tracing environment variables and log paths, then following a chained download, a base64-decoded payload, and the remote staging IP.",
+    date: "March 27, 2026",
+    platform: "LetsDefend",
+    tags: ["Blue Team", "Malware Analysis", "Walkthrough"],
+    image: "/assets/writeups/letsdefend-bash-script/thumbnail.png",
+    contentFile: "letsdefend-bash-script.md",
+  },
 ];
 
 export function getWriteupBySlug(slug: string): Writeup | undefined {
