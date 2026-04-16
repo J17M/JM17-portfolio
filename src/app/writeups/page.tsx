@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { WRITEUPS } from '@/data/writeups';
+import ScrollToTop from '@/app/components/ScrollToTop';
 
 const articles = WRITEUPS.map((w) => ({
   id: w.slug,
@@ -40,6 +41,7 @@ export default function BlogHome() {
 
   return (
     <div className="blog-layout">
+      <ScrollToTop />
       <aside className="blog-sidebar">
         <div className="sidebar-content">
           <Link href="/" className="back-link">
