@@ -43,7 +43,7 @@ Checking the `From:` header will reveal the sender's email address. It is import
 
 ![image-4.png](/assets/writeups/phishnet/image-4.png)
 
-Checking the `Reply-To:` will reveal the email address.  Note that the email in this header is different from the From: header address. This is a common phishing technique. Attackers typically use a sending email only used to send mass phishing emails. Having the Reply-To: header be different allows for replying messages to be redirected to a mailbox that is actively monitored for responses. In a legitimate email, the finance department sending an invoice would want replies to go back to that same address. There is not reason for replying mail to be sent to a different address unless used for a phishing attack.
+Checking the `Reply-To:` will reveal the email address. Note that the email in this header is different from the From: header address. This is a common phishing technique. Attackers typically use a sending email only used to send mass phishing emails. Having the Reply-To: header be different allows for replying messages to be redirected to a mailbox that is actively monitored for responses. In a legitimate email, the finance department sending an invoice would want replies to go back to that same address. There is no reason for replying mail to be sent to a different address unless used for a phishing attack.
 
 ## 5. What is the SPF (Sender Policy Framework) result for this email?
 
@@ -77,7 +77,7 @@ The URL embedded in the HTML is **`hxxps[://]secure[.]business-finance[.]com/inv
 
 ## 9. What is the SHA-256 hash of the attachment?
 
-### A.8379c41239e9af845b2ab6c27a7509ae8804d7d73e455c800a551b22ba25bb4a
+### A. 8379c41239e9af845b2ab6c27a7509ae8804d7d73e455c800a551b22ba25bb4a
 
 ![image-9.png](/assets/writeups/phishnet/image-9.png)
 
@@ -95,4 +95,4 @@ The zip file can be opened on any application that can unzip files. In the image
 
 ## A. T1566.001
 
-This is a spear phishing attack where the victim is tricked into clicking the malicious .bat attachment. Looking this up will lead you to the following MTRE ATT&CK page: [https://attack.mitre.org/techniques/T1566/001/](https://attack.mitre.org/techniques/T1566/001/)
+This is a spear phishing attack where the victim is tricked into clicking the malicious .bat attachment. Looking this up will lead you to the following MITRE ATT&CK page: [https://attack.mitre.org/techniques/T1566/001/](https://attack.mitre.org/techniques/T1566/001/)

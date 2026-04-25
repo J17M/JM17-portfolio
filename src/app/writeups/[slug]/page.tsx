@@ -29,7 +29,7 @@ export async function generateMetadata({
   const writeup = getWriteupBySlug(slug);
   if (!writeup) return {};
   return {
-    title: `${writeup.title} | phishforvulns`,
+    title: `${writeup.title} | JM17`,
     description: writeup.description,
   };
 }

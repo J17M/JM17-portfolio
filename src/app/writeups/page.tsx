@@ -50,7 +50,7 @@ export default function BlogHome() {
 
           <div className="profile-section">
             <img src="/assets/cyber-icon.png" alt="Profile" className="blog-profile-pic" />
-            <h1 className="blog-name">phishforvulns</h1>
+            <h1 className="blog-name">JM17</h1>
             <p className="blog-bio">
               Aspiring Red Teamer & CTF Player. Documenting my journey and sharing my knowledge along the way.
             </p>

@@ -5,12 +5,12 @@ import { useEffect, useState } from 'react';
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      // Detect active section
       const sections = document.querySelectorAll('section');
       const scrollPosition = window.scrollY + window.innerHeight * 0.4;
 
@@ -29,65 +29,74 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setMenuOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [menuOpen]);
+
   const scrollToSection = (sectionId: string) => {
+    setMenuOpen(false);
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
+  const navItems: { id: string; label: string }[] = [
+    { id: 'about', label: 'About' },
+    { id: 'education', label: 'Education' },
+    { id: 'certifications', label: 'Qualifications' },
+    { id: 'writeups', label: 'Writeups' },
+    { id: 'contact', label: 'Contact' },
+  ];
+
   return (
-    <header className={`pageHeader ${scrolled ? 'scrolled' : ''}`}>
+    <header
+      className={`pageHeader ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'header-menu-open' : ''}`}
+    >
       <div className="header">
-        <a 
-          onClick={() => scrollToSection('home')} 
+        <button
+          type="button"
+          onClick={() => scrollToSection('home')}
           className={`site-title ${activeSection === 'home' ? 'active-logo' : ''}`}
         >
           Juan Monarrez-Gonzalez
-        </a>
+        </button>
 
-        <nav className="nav">
+        <button
+          type="button"
+          className="nav-menu-toggle"
+          aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
+          aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span className="nav-menu-toggle-bar" aria-hidden />
+          <span className="nav-menu-toggle-bar" aria-hidden />
+          <span className="nav-menu-toggle-bar" aria-hidden />
+        </button>
+
+        <nav
+          id="primary-navigation"
+          className={`nav ${menuOpen ? 'nav--open' : ''}`}
+          aria-label="Primary"
+        >
           <ul className="nav-header-list">
-            <li>
-              <a 
-                onClick={() => scrollToSection('about')} 
-                className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a 
-                onClick={() => scrollToSection('education')} 
-                className={`nav-link ${activeSection === 'education' ? 'active' : ''}`}
-              >
-                Education
-              </a>
-            </li>
-            <li>
-              <a 
-                onClick={() => scrollToSection('certifications')} 
-                className={`nav-link ${activeSection === 'certifications' ? 'active' : ''}`}
-              >
-                Qualifications
-              </a>
-            </li>
-            <li>
-              <a 
-                onClick={() => scrollToSection('writeups')} 
-                className={`nav-link ${activeSection === 'writeups' ? 'active' : ''}`}
-              >
-                Writeups
-              </a>
-            </li>
-            <li>
-              <a 
-                onClick={() => scrollToSection('contact')} 
-                className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
-              >
-                Contact
-              </a>
-            </li>
+            {navItems.map(({ id, label }) => (
+              <li key={id}>
+                <button
+                  type="button"
+                  onClick={() => scrollToSection(id)}
+                  className={`nav-link ${activeSection === id ? 'active' : ''}`}
+                >
+                  {label}
+                </button>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>

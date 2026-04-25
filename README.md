@@ -11,7 +11,7 @@ Personal portfolio and writeup blog: penetration testing, CTF, certifications, a
 - [Next.js](https://nextjs.org) (App Router)
 - [React](https://react.dev)
 - [TypeScript](https://www.typescriptlang.org)
-- [Tailwind CSS](https://tailwindcss.com)
+- Custom global CSS ([src/app/globals.css](src/app/globals.css))
 - [react-markdown](https://github.com/remarkjs/react-markdown) + [rehype-highlight](https://github.com/rehypejs/rehype-highlight) for writeup articles
 
 ## Deploy

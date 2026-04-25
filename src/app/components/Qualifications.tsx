@@ -76,7 +76,7 @@ const trainingData: Training[] = [
   {
     platform: "TCM Security",
     role: "Course Completion",
-    description: "Completed Practical Ethical Hacker (PEH), OSINT FUndamentals, & External Pentest Playbook",
+    description: "Completed Practical Ethical Hacker (PEH), OSINT Fundamentals, & External Pentest Playbook",
     link: "https://academy.tcm-sec.com/",
     image: "/assets/tcm.png"
   },
