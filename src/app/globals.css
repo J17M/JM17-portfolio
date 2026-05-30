@@ -1860,6 +1860,20 @@ p:last-of-type {
     object-fit: contain;
 }
 
+/* LeetCode thumbnail: match screenshot aspect ratio so nothing is cropped */
+.article-card[data-slug="leetcode-217-contains-duplicate"] .article-thumbnail {
+    background: transparent;
+    aspect-ratio: 786 / 356;
+    width: 200px;
+    height: auto;
+}
+.article-card[data-slug="leetcode-217-contains-duplicate"] .article-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
 @media (max-width: 900px) {
     .article-card .article-thumbnail {
         width: 100%;
@@ -1869,6 +1883,14 @@ p:last-of-type {
     .article-card[data-slug="htb-nibbles"] .article-thumbnail {
         aspect-ratio: 1;
         max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .article-card[data-slug="leetcode-217-contains-duplicate"] .article-thumbnail {
+        width: 100%;
+        max-width: 320px;
+        aspect-ratio: 786 / 356;
+        height: auto;
         margin: 0 auto;
     }
 }

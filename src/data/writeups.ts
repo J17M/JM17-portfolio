@@ -73,6 +73,16 @@ export const WRITEUPS: Writeup[] = [
     image: "/assets/writeups/letsdefend-bash-script/thumbnail.png",
     contentFile: "letsdefend-bash-script.md",
   },
+  {
+    slug: 'leetcode-217-contains-duplicate',
+    title: "217. Contains Duplicate",
+    description: "Leetcode solution",
+    date: "May 10, 2026",
+    platform: "LeetCode",
+    tags: ["LeetCode"],
+    image: "/assets/writeups/leetcode-217-contains-duplicate/thumbnail.png",
+    contentFile: "leetcode-217-contains-duplicate.md",
+  },
 ];
 
 export function getWriteupBySlug(slug: string): Writeup | undefined {
